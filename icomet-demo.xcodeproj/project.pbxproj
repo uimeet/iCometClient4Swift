@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41429DBF24404202003CFBA2 /* ICometConnectionDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41429DBE24404202003CFBA2 /* ICometConnectionDataDelegate.swift */; };
+		41C8559D243F184000AE14BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8559C243F184000AE14BE /* AppDelegate.swift */; };
+		41C8559F243F184000AE14BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8559E243F184000AE14BE /* SceneDelegate.swift */; };
+		41C855A1243F184000AE14BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C855A0243F184000AE14BE /* ContentView.swift */; };
+		41C855A3243F184100AE14BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41C855A2243F184100AE14BE /* Assets.xcassets */; };
+		41C855A6243F184100AE14BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41C855A5243F184100AE14BE /* Preview Assets.xcassets */; };
+		41C855A9243F184100AE14BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C855A7243F184100AE14BE /* LaunchScreen.storyboard */; };
+		41C855B4243F184100AE14BE /* icomet_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C855B3243F184100AE14BE /* icomet_demoTests.swift */; };
+		41C855BF243F184200AE14BE /* icomet_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C855BE243F184200AE14BE /* icomet_demoUITests.swift */; };
+		41C855CD243F1E0500AE14BE /* ICometConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C855CC243F1E0500AE14BE /* ICometConnection.swift */; };
+		41C855D0243F266C00AE14BE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C855CF243F266C00AE14BE /* Message.swift */; };
+		41C855D3243F353D00AE14BE /* ICometCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C855D2243F353D00AE14BE /* ICometCallback.swift */; };
+		41C855D5243F370100AE14BE /* IConnectionCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C855D4243F370100AE14BE /* IConnectionCallback.swift */; };
+		41C855D7243F37A200AE14BE /* IChannelAllocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C855D6243F37A200AE14BE /* IChannelAllocator.swift */; };
+		41C855D9243F37C300AE14BE /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C855D8243F37C300AE14BE /* Channel.swift */; };
+		41C855DB243F385500AE14BE /* DefaultChannelAllocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C855DA243F385500AE14BE /* DefaultChannelAllocator.swift */; };
+		41C855DD243F38BE00AE14BE /* ICometConf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C855DC243F38BE00AE14BE /* ICometConf.swift */; };
+		41C855E1243F3A7200AE14BE /* ICometClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C855E0243F3A7200AE14BE /* ICometClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41C855B0243F184100AE14BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41C85591243F184000AE14BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41C85598243F184000AE14BE;
+			remoteInfo = "icomet-demo";
+		};
+		41C855BB243F184200AE14BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41C85591243F184000AE14BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41C85598243F184000AE14BE;
+			remoteInfo = "icomet-demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		41429DBE24404202003CFBA2 /* ICometConnectionDataDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICometConnectionDataDelegate.swift; sourceTree = "<group>"; };
+		41C85599243F184000AE14BE /* icomet-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "icomet-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41C8559C243F184000AE14BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		41C8559E243F184000AE14BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		41C855A0243F184000AE14BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		41C855A2243F184100AE14BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41C855A5243F184100AE14BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		41C855A8243F184100AE14BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		41C855AA243F184100AE14BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41C855AF243F184100AE14BE /* icomet-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "icomet-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41C855B3243F184100AE14BE /* icomet_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icomet_demoTests.swift; sourceTree = "<group>"; };
+		41C855B5243F184100AE14BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41C855BA243F184200AE14BE /* icomet-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "icomet-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41C855BE243F184200AE14BE /* icomet_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icomet_demoUITests.swift; sourceTree = "<group>"; };
+		41C855C0243F184200AE14BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41C855CC243F1E0500AE14BE /* ICometConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICometConnection.swift; sourceTree = "<group>"; };
+		41C855CF243F266C00AE14BE /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		41C855D2243F353D00AE14BE /* ICometCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICometCallback.swift; sourceTree = "<group>"; };
+		41C855D4243F370100AE14BE /* IConnectionCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IConnectionCallback.swift; sourceTree = "<group>"; };
+		41C855D6243F37A200AE14BE /* IChannelAllocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IChannelAllocator.swift; sourceTree = "<group>"; };
+		41C855D8243F37C300AE14BE /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		41C855DA243F385500AE14BE /* DefaultChannelAllocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultChannelAllocator.swift; sourceTree = "<group>"; };
+		41C855DC243F38BE00AE14BE /* ICometConf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICometConf.swift; sourceTree = "<group>"; };
+		41C855E0243F3A7200AE14BE /* ICometClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICometClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41C85596243F184000AE14BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41C855AC243F184100AE14BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41C855B7243F184200AE14BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41C85590243F184000AE14BE = {
+			isa = PBXGroup;
+			children = (
+				41C8559B243F184000AE14BE /* icomet-demo */,
+				41C855B2243F184100AE14BE /* icomet-demoTests */,
+				41C855BD243F184200AE14BE /* icomet-demoUITests */,
+				41C8559A243F184000AE14BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		41C8559A243F184000AE14BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41C85599243F184000AE14BE /* icomet-demo.app */,
+				41C855AF243F184100AE14BE /* icomet-demoTests.xctest */,
+				41C855BA243F184200AE14BE /* icomet-demoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41C8559B243F184000AE14BE /* icomet-demo */ = {
+			isa = PBXGroup;
+			children = (
+				41C855D1243F351900AE14BE /* iCometClient4Swift */,
+				41C8559C243F184000AE14BE /* AppDelegate.swift */,
+				41C8559E243F184000AE14BE /* SceneDelegate.swift */,
+				41C855A0243F184000AE14BE /* ContentView.swift */,
+				41C855A2243F184100AE14BE /* Assets.xcassets */,
+				41C855A7243F184100AE14BE /* LaunchScreen.storyboard */,
+				41C855AA243F184100AE14BE /* Info.plist */,
+				41C855A4243F184100AE14BE /* Preview Content */,
+			);
+			path = "icomet-demo";
+			sourceTree = "<group>";
+		};
+		41C855A4243F184100AE14BE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				41C855A5243F184100AE14BE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		41C855B2243F184100AE14BE /* icomet-demoTests */ = {
+			isa = PBXGroup;
+			children = (
+				41C855B3243F184100AE14BE /* icomet_demoTests.swift */,
+				41C855B5243F184100AE14BE /* Info.plist */,
+			);
+			path = "icomet-demoTests";
+			sourceTree = "<group>";
+		};
+		41C855BD243F184200AE14BE /* icomet-demoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				41C855BE243F184200AE14BE /* icomet_demoUITests.swift */,
+				41C855C0243F184200AE14BE /* Info.plist */,
+			);
+			path = "icomet-demoUITests";
+			sourceTree = "<group>";
+		};
+		41C855D1243F351900AE14BE /* iCometClient4Swift */ = {
+			isa = PBXGroup;
+			children = (
+				41C855CF243F266C00AE14BE /* Message.swift */,
+				41C855CC243F1E0500AE14BE /* ICometConnection.swift */,
+				41C855D2243F353D00AE14BE /* ICometCallback.swift */,
+				41C855D4243F370100AE14BE /* IConnectionCallback.swift */,
+				41C855D6243F37A200AE14BE /* IChannelAllocator.swift */,
+				41C855D8243F37C300AE14BE /* Channel.swift */,
+				41C855DA243F385500AE14BE /* DefaultChannelAllocator.swift */,
+				41C855DC243F38BE00AE14BE /* ICometConf.swift */,
+				41C855E0243F3A7200AE14BE /* ICometClient.swift */,
+				41429DBE24404202003CFBA2 /* ICometConnectionDataDelegate.swift */,
+			);
+			path = iCometClient4Swift;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41C85598243F184000AE14BE /* icomet-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41C855C3243F184200AE14BE /* Build configuration list for PBXNativeTarget "icomet-demo" */;
+			buildPhases = (
+				41C85595243F184000AE14BE /* Sources */,
+				41C85596243F184000AE14BE /* Frameworks */,
+				41C85597243F184000AE14BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "icomet-demo";
+			productName = "icomet-demo";
+			productReference = 41C85599243F184000AE14BE /* icomet-demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		41C855AE243F184100AE14BE /* icomet-demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41C855C6243F184200AE14BE /* Build configuration list for PBXNativeTarget "icomet-demoTests" */;
+			buildPhases = (
+				41C855AB243F184100AE14BE /* Sources */,
+				41C855AC243F184100AE14BE /* Frameworks */,
+				41C855AD243F184100AE14BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41C855B1243F184100AE14BE /* PBXTargetDependency */,
+			);
+			name = "icomet-demoTests";
+			productName = "icomet-demoTests";
+			productReference = 41C855AF243F184100AE14BE /* icomet-demoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		41C855B9243F184200AE14BE /* icomet-demoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41C855C9243F184200AE14BE /* Build configuration list for PBXNativeTarget "icomet-demoUITests" */;
+			buildPhases = (
+				41C855B6243F184200AE14BE /* Sources */,
+				41C855B7243F184200AE14BE /* Frameworks */,
+				41C855B8243F184200AE14BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41C855BC243F184200AE14BE /* PBXTargetDependency */,
+			);
+			name = "icomet-demoUITests";
+			productName = "icomet-demoUITests";
+			productReference = 41C855BA243F184200AE14BE /* icomet-demoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41C85591243F184000AE14BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "田真";
+				TargetAttributes = {
+					41C85598243F184000AE14BE = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					41C855AE243F184100AE14BE = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 41C85598243F184000AE14BE;
+					};
+					41C855B9243F184200AE14BE = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 41C85598243F184000AE14BE;
+					};
+				};
+			};
+			buildConfigurationList = 41C85594243F184000AE14BE /* Build configuration list for PBXProject "icomet-demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41C85590243F184000AE14BE;
+			productRefGroup = 41C8559A243F184000AE14BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41C85598243F184000AE14BE /* icomet-demo */,
+				41C855AE243F184100AE14BE /* icomet-demoTests */,
+				41C855B9243F184200AE14BE /* icomet-demoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41C85597243F184000AE14BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C855A9243F184100AE14BE /* LaunchScreen.storyboard in Resources */,
+				41C855A6243F184100AE14BE /* Preview Assets.xcassets in Resources */,
+				41C855A3243F184100AE14BE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41C855AD243F184100AE14BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41C855B8243F184200AE14BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41C85595243F184000AE14BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C855DD243F38BE00AE14BE /* ICometConf.swift in Sources */,
+				41429DBF24404202003CFBA2 /* ICometConnectionDataDelegate.swift in Sources */,
+				41C855E1243F3A7200AE14BE /* ICometClient.swift in Sources */,
+				41C855CD243F1E0500AE14BE /* ICometConnection.swift in Sources */,
+				41C855D3243F353D00AE14BE /* ICometCallback.swift in Sources */,
+				41C855D5243F370100AE14BE /* IConnectionCallback.swift in Sources */,
+				41C8559D243F184000AE14BE /* AppDelegate.swift in Sources */,
+				41C855D0243F266C00AE14BE /* Message.swift in Sources */,
+				41C855D7243F37A200AE14BE /* IChannelAllocator.swift in Sources */,
+				41C8559F243F184000AE14BE /* SceneDelegate.swift in Sources */,
+				41C855D9243F37C300AE14BE /* Channel.swift in Sources */,
+				41C855A1243F184000AE14BE /* ContentView.swift in Sources */,
+				41C855DB243F385500AE14BE /* DefaultChannelAllocator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41C855AB243F184100AE14BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C855B4243F184100AE14BE /* icomet_demoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41C855B6243F184200AE14BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C855BF243F184200AE14BE /* icomet_demoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41C855B1243F184100AE14BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41C85598243F184000AE14BE /* icomet-demo */;
+			targetProxy = 41C855B0243F184100AE14BE /* PBXContainerItemProxy */;
+		};
+		41C855BC243F184200AE14BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41C85598243F184000AE14BE /* icomet-demo */;
+			targetProxy = 41C855BB243F184200AE14BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		41C855A7243F184100AE14BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41C855A8243F184100AE14BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41C855C1243F184200AE14BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		41C855C2243F184200AE14BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41C855C4243F184200AE14BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"icomet-demo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "icomet-demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.kemiba.icomet-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41C855C5243F184200AE14BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"icomet-demo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "icomet-demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.kemiba.icomet-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		41C855C7243F184200AE14BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "icomet-demoTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.kemiba.icomet-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/icomet-demo.app/icomet-demo";
+			};
+			name = Debug;
+		};
+		41C855C8243F184200AE14BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "icomet-demoTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.kemiba.icomet-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/icomet-demo.app/icomet-demo";
+			};
+			name = Release;
+		};
+		41C855CA243F184200AE14BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "icomet-demoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.kemiba.icomet-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "icomet-demo";
+			};
+			name = Debug;
+		};
+		41C855CB243F184200AE14BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "icomet-demoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.kemiba.icomet-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "icomet-demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41C85594243F184000AE14BE /* Build configuration list for PBXProject "icomet-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41C855C1243F184200AE14BE /* Debug */,
+				41C855C2243F184200AE14BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41C855C3243F184200AE14BE /* Build configuration list for PBXNativeTarget "icomet-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41C855C4243F184200AE14BE /* Debug */,
+				41C855C5243F184200AE14BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41C855C6243F184200AE14BE /* Build configuration list for PBXNativeTarget "icomet-demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41C855C7243F184200AE14BE /* Debug */,
+				41C855C8243F184200AE14BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41C855C9243F184200AE14BE /* Build configuration list for PBXNativeTarget "icomet-demoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41C855CA243F184200AE14BE /* Debug */,
+				41C855CB243F184200AE14BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41C85591243F184000AE14BE /* Project object */;
+}
