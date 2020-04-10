@@ -9,7 +9,7 @@
 import Foundation
 
 
-protocol ICometCallback {
+public protocol ICometCallback {
     
     /**
     * 收到 TYPE_DATA 消息时回调

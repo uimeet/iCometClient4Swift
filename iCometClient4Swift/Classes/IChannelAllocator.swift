@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol IChannelAllocator {
+public protocol IChannelAllocator {
     /**
     * 该方法必须返回 Channel 的实例
     *

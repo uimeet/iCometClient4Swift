@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ICometConf {
+public class ICometConf {
     let host: String
     let port: Int32
     let url: String
@@ -18,7 +18,7 @@ class ICometConf {
     var iCometCallback: ICometCallback
     var iConnCallback: IConnectionCallback?
     
-    init(host: String, port: Int32, url: String, iCometCallback: ICometCallback, channelAllocator: IChannelAllocator? = nil, iConnCallback: IConnectionCallback? = nil, enableSSL: Bool = false) {
+    public init(host: String, port: Int32, url: String, iCometCallback: ICometCallback, channelAllocator: IChannelAllocator? = nil, iConnCallback: IConnectionCallback? = nil, enableSSL: Bool = false) {
         self.host = host
         self.port = port
         self.url = url

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ICometConnection: NSObject, URLSessionDataDelegate {
+public class ICometConnection: NSObject, URLSessionDataDelegate {
 
     private var session: URLSession! = nil
     private var dataDelegate: ICometConnectionDataDelegate

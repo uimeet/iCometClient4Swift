@@ -17,7 +17,6 @@
 		4162C1CA244086190054E3D9 /* ICometConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162C1BF244086190054E3D9 /* ICometConnection.swift */; };
 		4162C1CB244086190054E3D9 /* ICometConf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162C1C0244086190054E3D9 /* ICometConf.swift */; };
 		4162C1CC244086190054E3D9 /* DefaultChannelAllocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162C1C1244086190054E3D9 /* DefaultChannelAllocator.swift */; };
-		4162C1CD244086190054E3D9 /* ICometConnectionDataDelegate.iig in Sources */ = {isa = PBXBuildFile; fileRef = 4162C1C2244086190054E3D9 /* ICometConnectionDataDelegate.iig */; };
 		4162C1CE244086190054E3D9 /* IConnectionCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162C1C3244086190054E3D9 /* IConnectionCallback.swift */; };
 		4162C1CF244086190054E3D9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162C1C4244086190054E3D9 /* Message.swift */; };
 		4162C1D0244086190054E3D9 /* IChannelAllocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162C1C5244086190054E3D9 /* IChannelAllocator.swift */; };
@@ -60,7 +59,6 @@
 		4162C1BF244086190054E3D9 /* ICometConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ICometConnection.swift; path = iCometClient4Swift/Classes/ICometConnection.swift; sourceTree = "<group>"; };
 		4162C1C0244086190054E3D9 /* ICometConf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ICometConf.swift; path = iCometClient4Swift/Classes/ICometConf.swift; sourceTree = "<group>"; };
 		4162C1C1244086190054E3D9 /* DefaultChannelAllocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultChannelAllocator.swift; path = iCometClient4Swift/Classes/DefaultChannelAllocator.swift; sourceTree = "<group>"; };
-		4162C1C2244086190054E3D9 /* ICometConnectionDataDelegate.iig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.iig; name = ICometConnectionDataDelegate.iig; path = iCometClient4Swift/Classes/ICometConnectionDataDelegate.iig; sourceTree = "<group>"; };
 		4162C1C3244086190054E3D9 /* IConnectionCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IConnectionCallback.swift; path = iCometClient4Swift/Classes/IConnectionCallback.swift; sourceTree = "<group>"; };
 		4162C1C4244086190054E3D9 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Message.swift; path = iCometClient4Swift/Classes/Message.swift; sourceTree = "<group>"; };
 		4162C1C5244086190054E3D9 /* IChannelAllocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IChannelAllocator.swift; path = iCometClient4Swift/Classes/IChannelAllocator.swift; sourceTree = "<group>"; };
@@ -130,7 +128,6 @@
 				4162C1BC244086190054E3D9 /* ICometClient.swift */,
 				4162C1C0244086190054E3D9 /* ICometConf.swift */,
 				4162C1BF244086190054E3D9 /* ICometConnection.swift */,
-				4162C1C2244086190054E3D9 /* ICometConnectionDataDelegate.iig */,
 				4162C1C6244086190054E3D9 /* ICometConnectionDataDelegate.swift */,
 				4162C1C3244086190054E3D9 /* IConnectionCallback.swift */,
 				4162C1C4244086190054E3D9 /* Message.swift */,
@@ -414,7 +411,6 @@
 				4162C1C9244086190054E3D9 /* Channel.swift in Sources */,
 				4162C1D0244086190054E3D9 /* IChannelAllocator.swift in Sources */,
 				4162C1CE244086190054E3D9 /* IConnectionCallback.swift in Sources */,
-				4162C1CD244086190054E3D9 /* ICometConnectionDataDelegate.iig in Sources */,
 				4162C1CC244086190054E3D9 /* DefaultChannelAllocator.swift in Sources */,
 				4162C1CB244086190054E3D9 /* ICometConf.swift in Sources */,
 				4162C1D1244086190054E3D9 /* ICometConnectionDataDelegate.swift in Sources */,
@@ -534,7 +530,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/iCometClient4Swift/iCometClient4Swift-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/iCometClient4Swift/iCometClient4Swift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/iCometClient4Swift/iCometClient4Swift.modulemap";
 				PRODUCT_MODULE_NAME = iCometClient4Swift;
@@ -758,7 +754,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/iCometClient4Swift/iCometClient4Swift-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/iCometClient4Swift/iCometClient4Swift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/iCometClient4Swift/iCometClient4Swift.modulemap";
 				PRODUCT_MODULE_NAME = iCometClient4Swift;

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ICometClient: ICometConnectionDataDelegate {
+public class ICometClient: ICometConnectionDataDelegate {
     
     // 连接服务端使用的完整URL
     private var finalUrl: String = ""
@@ -26,13 +26,13 @@ class ICometClient: ICometConnectionDataDelegate {
     
     private var status: ClientState = ClientState.NEW
     
-    init() {}
+    public init() {}
     
     /**
      准备连接
      @param conf
      */
-    func prepare(conf: ICometConf) -> Void {
+    public func prepare(conf: ICometConf) -> Void {
         NSLog("[prepare]\(conf)")
         
         if conf.channelAllocator == nil {
@@ -52,7 +52,7 @@ class ICometClient: ICometConnectionDataDelegate {
         
     }
     
-    func connect() {
+    public func connect() {
         NSLog("[connect]STATUS: \(self.status)")
         if self.status != ClientState.READY {
             return
@@ -63,7 +63,7 @@ class ICometClient: ICometConnectionDataDelegate {
         
     }
     
-    func stopConnect() {
+    public func stopConnect() {
         NSLog("[stopConnect]")
         self.status = ClientState.STOP_PENDING
         if self.connection != nil {

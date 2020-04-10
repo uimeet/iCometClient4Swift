@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol IConnectionCallback {
+public protocol IConnectionCallback {
     /**
      * 连接 Comet 服务端失败时回调
      * @param msg

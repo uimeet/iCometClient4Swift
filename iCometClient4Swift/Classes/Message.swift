@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Message {
+public struct Message {
     
     // 消息类型
     let type: MessageType
@@ -43,7 +43,7 @@ struct Message {
     }
 
     
-    struct Content: Equatable {
+    public struct Content: Equatable {
         
         static let serialVersionUID = 4340957908804000989
         // 错误内容
@@ -65,7 +65,7 @@ struct Message {
             return values.joined(separator: ", ")
         }
         
-        static func == (lhs: Message.Content, rhs: Message.Content) -> Bool {
+        public static func == (lhs: Message.Content, rhs: Message.Content) -> Bool {
             return lhs.type == rhs.type && lhs.id == rhs.id
         }
         

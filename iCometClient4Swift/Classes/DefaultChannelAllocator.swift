@@ -8,9 +8,9 @@
 
 import Foundation
 
-class DefaultChannelAllocator: IChannelAllocator {
+public class DefaultChannelAllocator: IChannelAllocator {
     
-    func allocate() -> Channel {
+    public func allocate() -> Channel {
         return Channel()
     }
 }
