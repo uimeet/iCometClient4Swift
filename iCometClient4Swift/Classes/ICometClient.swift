@@ -196,7 +196,7 @@ public class ICometClient: ICometConnectionDataDelegate {
     
     func clearTimer() {
         if self.timer != nil {
-            self.timer.invalidate()
+            self.timer?.invalidate()
             self.timer = nil
         }
     }
