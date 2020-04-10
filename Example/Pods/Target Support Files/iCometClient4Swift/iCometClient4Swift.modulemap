@@ -1,0 +1,6 @@
+framework module iCometClient4Swift {
+  umbrella header "iCometClient4Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

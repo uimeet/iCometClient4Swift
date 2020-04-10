@@ -1,0 +1,819 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		117081EE751C8D3C24C48D482104CD23 /* iCometClient4Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993F1B96D74210564508FF217CAD6F1 /* iCometClient4Swift-dummy.m */; };
+		190FE250B6A6111BFF6E3580D799E85F /* Pods-iCometClient4Swift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCB1B6E9B1D2B8A1847F1E6FCDD9FE2 /* Pods-iCometClient4Swift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2208A7C89536BF2D737B6867F49A938A /* Pods-iCometClient4Swift_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DB1F64C99A29255323B8B9DAD95BCA1 /* Pods-iCometClient4Swift_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		286865E682E490B57861C0BCD205E537 /* iCometClient4Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD71E8DEE92D0C8E5F3C07B89B6E9794 /* iCometClient4Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4162C1C7244086190054E3D9 /* ICometClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162C1BC244086190054E3D9 /* ICometClient.swift */; };
+		4162C1C8244086190054E3D9 /* ICometCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162C1BD244086190054E3D9 /* ICometCallback.swift */; };
+		4162C1C9244086190054E3D9 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162C1BE244086190054E3D9 /* Channel.swift */; };
+		4162C1CA244086190054E3D9 /* ICometConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162C1BF244086190054E3D9 /* ICometConnection.swift */; };
+		4162C1CB244086190054E3D9 /* ICometConf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162C1C0244086190054E3D9 /* ICometConf.swift */; };
+		4162C1CC244086190054E3D9 /* DefaultChannelAllocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162C1C1244086190054E3D9 /* DefaultChannelAllocator.swift */; };
+		4162C1CD244086190054E3D9 /* ICometConnectionDataDelegate.iig in Sources */ = {isa = PBXBuildFile; fileRef = 4162C1C2244086190054E3D9 /* ICometConnectionDataDelegate.iig */; };
+		4162C1CE244086190054E3D9 /* IConnectionCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162C1C3244086190054E3D9 /* IConnectionCallback.swift */; };
+		4162C1CF244086190054E3D9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162C1C4244086190054E3D9 /* Message.swift */; };
+		4162C1D0244086190054E3D9 /* IChannelAllocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162C1C5244086190054E3D9 /* IChannelAllocator.swift */; };
+		4162C1D1244086190054E3D9 /* ICometConnectionDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162C1C6244086190054E3D9 /* ICometConnectionDataDelegate.swift */; };
+		65553A5CA45827822DA71F2535572C5C /* Pods-iCometClient4Swift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 343B2637795CB2C99C383678CFC2DBA4 /* Pods-iCometClient4Swift_Example-dummy.m */; };
+		D10488619F932D7B4FDC4243626AD8E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		D2000CB0270378EABCD7F21E152561BA /* Pods-iCometClient4Swift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A84FD2ED5F838FF004E6B3A7E0B80B35 /* Pods-iCometClient4Swift_Tests-dummy.m */; };
+		EC16AF5A92DEF00BAB624302B8CC3F50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		EC59B5D382AE5A21E8EB6701494C404D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9521CD451EAB9297607A970F146B856 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED8198B08BBC62AD6B6B4B2585F3A1CE;
+			remoteInfo = iCometClient4Swift;
+		};
+		ED0C2C9E7C5F7BD4CBD6A3E7610233C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3A49CE6E20BEB0FA697DD5B5DB0069D;
+			remoteInfo = "Pods-iCometClient4Swift_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FC0050DCC97D103E6D610E4887116E9 /* iCometClient4Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iCometClient4Swift.release.xcconfig; sourceTree = "<group>"; };
+		1A45011B892395D901FB352BCD21395D /* iCometClient4Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iCometClient4Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DB1F64C99A29255323B8B9DAD95BCA1 /* Pods-iCometClient4Swift_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iCometClient4Swift_Tests-umbrella.h"; sourceTree = "<group>"; };
+		1DB83027161762B39BBC044972EFA090 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		343B2637795CB2C99C383678CFC2DBA4 /* Pods-iCometClient4Swift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iCometClient4Swift_Example-dummy.m"; sourceTree = "<group>"; };
+		3C230464F4E2AB0B33131D8A6AE42072 /* Pods-iCometClient4Swift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iCometClient4Swift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4162C1BC244086190054E3D9 /* ICometClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ICometClient.swift; path = iCometClient4Swift/Classes/ICometClient.swift; sourceTree = "<group>"; };
+		4162C1BD244086190054E3D9 /* ICometCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ICometCallback.swift; path = iCometClient4Swift/Classes/ICometCallback.swift; sourceTree = "<group>"; };
+		4162C1BE244086190054E3D9 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Channel.swift; path = iCometClient4Swift/Classes/Channel.swift; sourceTree = "<group>"; };
+		4162C1BF244086190054E3D9 /* ICometConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ICometConnection.swift; path = iCometClient4Swift/Classes/ICometConnection.swift; sourceTree = "<group>"; };
+		4162C1C0244086190054E3D9 /* ICometConf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ICometConf.swift; path = iCometClient4Swift/Classes/ICometConf.swift; sourceTree = "<group>"; };
+		4162C1C1244086190054E3D9 /* DefaultChannelAllocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultChannelAllocator.swift; path = iCometClient4Swift/Classes/DefaultChannelAllocator.swift; sourceTree = "<group>"; };
+		4162C1C2244086190054E3D9 /* ICometConnectionDataDelegate.iig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.iig; name = ICometConnectionDataDelegate.iig; path = iCometClient4Swift/Classes/ICometConnectionDataDelegate.iig; sourceTree = "<group>"; };
+		4162C1C3244086190054E3D9 /* IConnectionCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IConnectionCallback.swift; path = iCometClient4Swift/Classes/IConnectionCallback.swift; sourceTree = "<group>"; };
+		4162C1C4244086190054E3D9 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Message.swift; path = iCometClient4Swift/Classes/Message.swift; sourceTree = "<group>"; };
+		4162C1C5244086190054E3D9 /* IChannelAllocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IChannelAllocator.swift; path = iCometClient4Swift/Classes/IChannelAllocator.swift; sourceTree = "<group>"; };
+		4162C1C6244086190054E3D9 /* ICometConnectionDataDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ICometConnectionDataDelegate.swift; path = iCometClient4Swift/Classes/ICometConnectionDataDelegate.swift; sourceTree = "<group>"; };
+		4528E9FBA33389EFF418FEAD56CF2D94 /* Pods-iCometClient4Swift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iCometClient4Swift_Example.release.xcconfig"; sourceTree = "<group>"; };
+		45A92BD0939B97A4320197EC871134FF /* iCometClient4Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = iCometClient4Swift.modulemap; sourceTree = "<group>"; };
+		4993F1B96D74210564508FF217CAD6F1 /* iCometClient4Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iCometClient4Swift-dummy.m"; sourceTree = "<group>"; };
+		5921A373C0AC759A5050305766184876 /* iCometClient4Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iCometClient4Swift.debug.xcconfig; sourceTree = "<group>"; };
+		67CA18A16901A61A299133DE0087E7BA /* Pods_iCometClient4Swift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iCometClient4Swift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		696A67623F9A2EBF78C63CCA28653BA4 /* Pods-iCometClient4Swift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iCometClient4Swift_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		6B239035D19C56DC6C5969CA1E2D089D /* Pods-iCometClient4Swift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iCometClient4Swift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		707D733F41292EE54F01233F5C8624C7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		83EB6710B82291E7F7AAE579F2627D83 /* Pods-iCometClient4Swift_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iCometClient4Swift_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		84359F451D667B9208DF1467AD837FAF /* Pods-iCometClient4Swift_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iCometClient4Swift_Example-Info.plist"; sourceTree = "<group>"; };
+		88324F33EB90D062DD5CAEF0C5670028 /* Pods_iCometClient4Swift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iCometClient4Swift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A045FC02474957C8CD615F02D7CF0783 /* iCometClient4Swift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = iCometClient4Swift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3FD64B98C32A5AEAD42616C5D54C090 /* Pods-iCometClient4Swift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iCometClient4Swift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A84FD2ED5F838FF004E6B3A7E0B80B35 /* Pods-iCometClient4Swift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iCometClient4Swift_Tests-dummy.m"; sourceTree = "<group>"; };
+		A895EE0627B2EB27F725DEB7E0539977 /* Pods-iCometClient4Swift_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iCometClient4Swift_Example.modulemap"; sourceTree = "<group>"; };
+		ADD97EA9B8A9D287C3C5C9F5282A7A31 /* Pods-iCometClient4Swift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iCometClient4Swift_Example-frameworks.sh"; sourceTree = "<group>"; };
+		BCCB1B6E9B1D2B8A1847F1E6FCDD9FE2 /* Pods-iCometClient4Swift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iCometClient4Swift_Example-umbrella.h"; sourceTree = "<group>"; };
+		C199675D775F31029B4EC51754EFAF63 /* Pods-iCometClient4Swift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iCometClient4Swift_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C3633EF48D0A4A48475DE9E223F01DE5 /* iCometClient4Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iCometClient4Swift-prefix.pch"; sourceTree = "<group>"; };
+		C5ED3273FEF7ED2C65D9221C4EF1E60F /* Pods-iCometClient4Swift_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iCometClient4Swift_Tests.modulemap"; sourceTree = "<group>"; };
+		CD424EC62C613B8283AF8FC1945A7320 /* iCometClient4Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "iCometClient4Swift-Info.plist"; sourceTree = "<group>"; };
+		DD71E8DEE92D0C8E5F3C07B89B6E9794 /* iCometClient4Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iCometClient4Swift-umbrella.h"; sourceTree = "<group>"; };
+		E7252D94241BAEFAB3D473EBEDDD44A0 /* Pods-iCometClient4Swift_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iCometClient4Swift_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F7C263B0D20173572004E8D959151C3A /* Pods-iCometClient4Swift_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iCometClient4Swift_Tests-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B98235A2726CA7F7108763DE8D45383 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC59B5D382AE5A21E8EB6701494C404D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		555F7B04FE513FBC0CA8DD791005A60E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10488619F932D7B4FDC4243626AD8E4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7818E41970357B2C78620646C4C56325 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC16AF5A92DEF00BAB624302B8CC3F50 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B3E86F20072555EB377034148F613D8 /* iCometClient4Swift */ = {
+			isa = PBXGroup;
+			children = (
+				4162C1BE244086190054E3D9 /* Channel.swift */,
+				4162C1C1244086190054E3D9 /* DefaultChannelAllocator.swift */,
+				4162C1C5244086190054E3D9 /* IChannelAllocator.swift */,
+				4162C1BD244086190054E3D9 /* ICometCallback.swift */,
+				4162C1BC244086190054E3D9 /* ICometClient.swift */,
+				4162C1C0244086190054E3D9 /* ICometConf.swift */,
+				4162C1BF244086190054E3D9 /* ICometConnection.swift */,
+				4162C1C2244086190054E3D9 /* ICometConnectionDataDelegate.iig */,
+				4162C1C6244086190054E3D9 /* ICometConnectionDataDelegate.swift */,
+				4162C1C3244086190054E3D9 /* IConnectionCallback.swift */,
+				4162C1C4244086190054E3D9 /* Message.swift */,
+				57ACC24873D5ED8121922EFA2CFA9408 /* Pod */,
+				B92B4C002BB98BF352CC8221D2A7C5DC /* Support Files */,
+			);
+			name = iCometClient4Swift;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		57ACC24873D5ED8121922EFA2CFA9408 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A045FC02474957C8CD615F02D7CF0783 /* iCometClient4Swift.podspec */,
+				707D733F41292EE54F01233F5C8624C7 /* LICENSE */,
+				1DB83027161762B39BBC044972EFA090 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		7A9E61F7F3AB41EC5827ED8659882C72 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D247D617A6C28CFB61B124D5D36163E3 /* Pods-iCometClient4Swift_Example */,
+				D507132B7A4687CAB702A6EC3341C299 /* Pods-iCometClient4Swift_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B92B4C002BB98BF352CC8221D2A7C5DC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				45A92BD0939B97A4320197EC871134FF /* iCometClient4Swift.modulemap */,
+				4993F1B96D74210564508FF217CAD6F1 /* iCometClient4Swift-dummy.m */,
+				CD424EC62C613B8283AF8FC1945A7320 /* iCometClient4Swift-Info.plist */,
+				C3633EF48D0A4A48475DE9E223F01DE5 /* iCometClient4Swift-prefix.pch */,
+				DD71E8DEE92D0C8E5F3C07B89B6E9794 /* iCometClient4Swift-umbrella.h */,
+				5921A373C0AC759A5050305766184876 /* iCometClient4Swift.debug.xcconfig */,
+				0FC0050DCC97D103E6D610E4887116E9 /* iCometClient4Swift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/iCometClient4Swift";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C1039D568334F927F17E7CC3C76B4725 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B3E86F20072555EB377034148F613D8 /* iCometClient4Swift */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				C1039D568334F927F17E7CC3C76B4725 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				EF09B2A59F1365A4A3EA956ECF975A36 /* Products */,
+				7A9E61F7F3AB41EC5827ED8659882C72 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D247D617A6C28CFB61B124D5D36163E3 /* Pods-iCometClient4Swift_Example */ = {
+			isa = PBXGroup;
+			children = (
+				A895EE0627B2EB27F725DEB7E0539977 /* Pods-iCometClient4Swift_Example.modulemap */,
+				A3FD64B98C32A5AEAD42616C5D54C090 /* Pods-iCometClient4Swift_Example-acknowledgements.markdown */,
+				6B239035D19C56DC6C5969CA1E2D089D /* Pods-iCometClient4Swift_Example-acknowledgements.plist */,
+				343B2637795CB2C99C383678CFC2DBA4 /* Pods-iCometClient4Swift_Example-dummy.m */,
+				ADD97EA9B8A9D287C3C5C9F5282A7A31 /* Pods-iCometClient4Swift_Example-frameworks.sh */,
+				84359F451D667B9208DF1467AD837FAF /* Pods-iCometClient4Swift_Example-Info.plist */,
+				BCCB1B6E9B1D2B8A1847F1E6FCDD9FE2 /* Pods-iCometClient4Swift_Example-umbrella.h */,
+				696A67623F9A2EBF78C63CCA28653BA4 /* Pods-iCometClient4Swift_Example.debug.xcconfig */,
+				4528E9FBA33389EFF418FEAD56CF2D94 /* Pods-iCometClient4Swift_Example.release.xcconfig */,
+			);
+			name = "Pods-iCometClient4Swift_Example";
+			path = "Target Support Files/Pods-iCometClient4Swift_Example";
+			sourceTree = "<group>";
+		};
+		D507132B7A4687CAB702A6EC3341C299 /* Pods-iCometClient4Swift_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C5ED3273FEF7ED2C65D9221C4EF1E60F /* Pods-iCometClient4Swift_Tests.modulemap */,
+				83EB6710B82291E7F7AAE579F2627D83 /* Pods-iCometClient4Swift_Tests-acknowledgements.markdown */,
+				E7252D94241BAEFAB3D473EBEDDD44A0 /* Pods-iCometClient4Swift_Tests-acknowledgements.plist */,
+				A84FD2ED5F838FF004E6B3A7E0B80B35 /* Pods-iCometClient4Swift_Tests-dummy.m */,
+				F7C263B0D20173572004E8D959151C3A /* Pods-iCometClient4Swift_Tests-Info.plist */,
+				1DB1F64C99A29255323B8B9DAD95BCA1 /* Pods-iCometClient4Swift_Tests-umbrella.h */,
+				3C230464F4E2AB0B33131D8A6AE42072 /* Pods-iCometClient4Swift_Tests.debug.xcconfig */,
+				C199675D775F31029B4EC51754EFAF63 /* Pods-iCometClient4Swift_Tests.release.xcconfig */,
+			);
+			name = "Pods-iCometClient4Swift_Tests";
+			path = "Target Support Files/Pods-iCometClient4Swift_Tests";
+			sourceTree = "<group>";
+		};
+		EF09B2A59F1365A4A3EA956ECF975A36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A45011B892395D901FB352BCD21395D /* iCometClient4Swift.framework */,
+				88324F33EB90D062DD5CAEF0C5670028 /* Pods_iCometClient4Swift_Example.framework */,
+				67CA18A16901A61A299133DE0087E7BA /* Pods_iCometClient4Swift_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6F78A83B9F25BEA27E19155789C6FE7A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2208A7C89536BF2D737B6867F49A938A /* Pods-iCometClient4Swift_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5DA86BF21EF43326A0B80970E06E7D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190FE250B6A6111BFF6E3580D799E85F /* Pods-iCometClient4Swift_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9B58BBFF04C6AD10D2B9B163728BFFF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				286865E682E490B57861C0BCD205E537 /* iCometClient4Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E3A49CE6E20BEB0FA697DD5B5DB0069D /* Pods-iCometClient4Swift_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D34F00CF9E344218EFA3FF607F89B491 /* Build configuration list for PBXNativeTarget "Pods-iCometClient4Swift_Example" */;
+			buildPhases = (
+				A5DA86BF21EF43326A0B80970E06E7D6 /* Headers */,
+				45DCCC4A012590F6B4D3E7D611FAF769 /* Sources */,
+				3B98235A2726CA7F7108763DE8D45383 /* Frameworks */,
+				FADD1151ADBB5908CF2D9200D212D059 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				536996210CC00E236D04B3C729061302 /* PBXTargetDependency */,
+			);
+			name = "Pods-iCometClient4Swift_Example";
+			productName = "Pods-iCometClient4Swift_Example";
+			productReference = 88324F33EB90D062DD5CAEF0C5670028 /* Pods_iCometClient4Swift_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ED8198B08BBC62AD6B6B4B2585F3A1CE /* iCometClient4Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AAAF649DA9B5340DB1F03C30313B4E6 /* Build configuration list for PBXNativeTarget "iCometClient4Swift" */;
+			buildPhases = (
+				C9B58BBFF04C6AD10D2B9B163728BFFF /* Headers */,
+				5F1B37B414689488646EF46D59521141 /* Sources */,
+				7818E41970357B2C78620646C4C56325 /* Frameworks */,
+				83ECB596EEEE3D8903F1D48EE3DB1759 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iCometClient4Swift;
+			productName = iCometClient4Swift;
+			productReference = 1A45011B892395D901FB352BCD21395D /* iCometClient4Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F3FCC9D2B5AB46F348E85FD628F999B1 /* Pods-iCometClient4Swift_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C3B4873DB60B5DFD9C783AF9260B45E /* Build configuration list for PBXNativeTarget "Pods-iCometClient4Swift_Tests" */;
+			buildPhases = (
+				6F78A83B9F25BEA27E19155789C6FE7A /* Headers */,
+				76D28D6A865BA61B0D00F4F06C4F18B7 /* Sources */,
+				555F7B04FE513FBC0CA8DD791005A60E /* Frameworks */,
+				9C10A3CEFC07FBB543C57923B077C664 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6131586C86FDFF1EF8833EEE3B92AB81 /* PBXTargetDependency */,
+			);
+			name = "Pods-iCometClient4Swift_Tests";
+			productName = "Pods-iCometClient4Swift_Tests";
+			productReference = 67CA18A16901A61A299133DE0087E7BA /* Pods_iCometClient4Swift_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					ED8198B08BBC62AD6B6B4B2585F3A1CE = {
+						LastSwiftMigration = 1140;
+					};
+				};
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = EF09B2A59F1365A4A3EA956ECF975A36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED8198B08BBC62AD6B6B4B2585F3A1CE /* iCometClient4Swift */,
+				E3A49CE6E20BEB0FA697DD5B5DB0069D /* Pods-iCometClient4Swift_Example */,
+				F3FCC9D2B5AB46F348E85FD628F999B1 /* Pods-iCometClient4Swift_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83ECB596EEEE3D8903F1D48EE3DB1759 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C10A3CEFC07FBB543C57923B077C664 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADD1151ADBB5908CF2D9200D212D059 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45DCCC4A012590F6B4D3E7D611FAF769 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65553A5CA45827822DA71F2535572C5C /* Pods-iCometClient4Swift_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F1B37B414689488646EF46D59521141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				117081EE751C8D3C24C48D482104CD23 /* iCometClient4Swift-dummy.m in Sources */,
+				4162C1C9244086190054E3D9 /* Channel.swift in Sources */,
+				4162C1D0244086190054E3D9 /* IChannelAllocator.swift in Sources */,
+				4162C1CE244086190054E3D9 /* IConnectionCallback.swift in Sources */,
+				4162C1CD244086190054E3D9 /* ICometConnectionDataDelegate.iig in Sources */,
+				4162C1CC244086190054E3D9 /* DefaultChannelAllocator.swift in Sources */,
+				4162C1CB244086190054E3D9 /* ICometConf.swift in Sources */,
+				4162C1D1244086190054E3D9 /* ICometConnectionDataDelegate.swift in Sources */,
+				4162C1C8244086190054E3D9 /* ICometCallback.swift in Sources */,
+				4162C1CF244086190054E3D9 /* Message.swift in Sources */,
+				4162C1CA244086190054E3D9 /* ICometConnection.swift in Sources */,
+				4162C1C7244086190054E3D9 /* ICometClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76D28D6A865BA61B0D00F4F06C4F18B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2000CB0270378EABCD7F21E152561BA /* Pods-iCometClient4Swift_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		536996210CC00E236D04B3C729061302 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iCometClient4Swift;
+			target = ED8198B08BBC62AD6B6B4B2585F3A1CE /* iCometClient4Swift */;
+			targetProxy = A9521CD451EAB9297607A970F146B856 /* PBXContainerItemProxy */;
+		};
+		6131586C86FDFF1EF8833EEE3B92AB81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-iCometClient4Swift_Example";
+			target = E3A49CE6E20BEB0FA697DD5B5DB0069D /* Pods-iCometClient4Swift_Example */;
+			targetProxy = ED0C2C9E7C5F7BD4CBD6A3E7610233C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1080185781D794CBE6F739B467499460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 696A67623F9A2EBF78C63CCA28653BA4 /* Pods-iCometClient4Swift_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iCometClient4Swift_Example/Pods-iCometClient4Swift_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iCometClient4Swift_Example/Pods-iCometClient4Swift_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		20668F7B899BBD0B5A42A52601958216 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C230464F4E2AB0B33131D8A6AE42072 /* Pods-iCometClient4Swift_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iCometClient4Swift_Tests/Pods-iCometClient4Swift_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iCometClient4Swift_Tests/Pods-iCometClient4Swift_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		97A1F648D9D57A4CA36833F73B90E70B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FC0050DCC97D103E6D610E4887116E9 /* iCometClient4Swift.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iCometClient4Swift/iCometClient4Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iCometClient4Swift/iCometClient4Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/iCometClient4Swift/iCometClient4Swift.modulemap";
+				PRODUCT_MODULE_NAME = iCometClient4Swift;
+				PRODUCT_NAME = iCometClient4Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C5347F451A03F018C9B481AF22FD40F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C199675D775F31029B4EC51754EFAF63 /* Pods-iCometClient4Swift_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iCometClient4Swift_Tests/Pods-iCometClient4Swift_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iCometClient4Swift_Tests/Pods-iCometClient4Swift_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D0A0698B123994416BAFC26EFD860890 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4528E9FBA33389EFF418FEAD56CF2D94 /* Pods-iCometClient4Swift_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iCometClient4Swift_Example/Pods-iCometClient4Swift_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iCometClient4Swift_Example/Pods-iCometClient4Swift_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D5D093164A03CBE297AA47BA9811C6FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5921A373C0AC759A5050305766184876 /* iCometClient4Swift.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iCometClient4Swift/iCometClient4Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iCometClient4Swift/iCometClient4Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/iCometClient4Swift/iCometClient4Swift.modulemap";
+				PRODUCT_MODULE_NAME = iCometClient4Swift;
+				PRODUCT_NAME = iCometClient4Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C3B4873DB60B5DFD9C783AF9260B45E /* Build configuration list for PBXNativeTarget "Pods-iCometClient4Swift_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20668F7B899BBD0B5A42A52601958216 /* Debug */,
+				C5347F451A03F018C9B481AF22FD40F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
+				B0087CB4594321EF41619F3181FE120E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AAAF649DA9B5340DB1F03C30313B4E6 /* Build configuration list for PBXNativeTarget "iCometClient4Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5D093164A03CBE297AA47BA9811C6FE /* Debug */,
+				97A1F648D9D57A4CA36833F73B90E70B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D34F00CF9E344218EFA3FF607F89B491 /* Build configuration list for PBXNativeTarget "Pods-iCometClient4Swift_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1080185781D794CBE6F739B467499460 /* Debug */,
+				D0A0698B123994416BAFC26EFD860890 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

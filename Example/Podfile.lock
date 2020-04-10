@@ -1,0 +1,16 @@
+PODS:
+  - iCometClient4Swift (0.1.0)
+
+DEPENDENCIES:
+  - iCometClient4Swift (from `../`)
+
+EXTERNAL SOURCES:
+  iCometClient4Swift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  iCometClient4Swift: 8786c85aa625a5f1dd8978c9c34f581f7077af1d
+
+PODFILE CHECKSUM: be3c544f7cef336a2e83902dd866a8c469404f40
+
+COCOAPODS: 1.9.1

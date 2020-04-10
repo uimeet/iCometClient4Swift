@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'iCometClient4Swift_Example' do
+  pod 'iCometClient4Swift', :path => '../'
+
+  target 'iCometClient4Swift_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
