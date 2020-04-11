@@ -45,7 +45,6 @@ public struct Message {
     
     public struct Content: Equatable {
         
-        static let serialVersionUID = 4340957908804000989
         // 错误内容
         static let Error: Content = Content(type: -1, body: nil, id: "<Content.Error>")
         // 空内容
