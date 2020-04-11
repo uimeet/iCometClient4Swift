@@ -65,7 +65,7 @@ public class ICometConnection: NSObject, URLSessionDataDelegate {
         }
     }
 
-    func urlSession(_ session: URLSession, task: URLSessionTask, needNewBodyStream completionHandler: @escaping (InputStream?) -> Void) {
+    public func urlSession(_ session: URLSession, task: URLSessionTask, needNewBodyStream completionHandler: @escaping (InputStream?) -> Void) {
         self.closeStream()
         print("start")
 
@@ -77,7 +77,7 @@ public class ICometConnection: NSObject, URLSessionDataDelegate {
         completionHandler(inStream)
     }
 
-    func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
+    public func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
         let rawData = String(data: data, encoding: .utf8)?.trimmingCharacters(in: .whitespacesAndNewlines)
         NSLog("[DATA_ARRIVED] \(rawData)")
         
@@ -89,17 +89,13 @@ public class ICometConnection: NSObject, URLSessionDataDelegate {
         }
     }
 
-    func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
+    public func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
         NSLog("[CLOSE] \(String(describing: error))")
         if error == nil {
             self.dataDelegate.onCompleted()
         } else {
             self.dataDelegate.onError(error: error!)
         }
-//        if let error = error as NSError? {
-//            NSLog("task error: %@ / %d", error.domain, error.code)
-//        } else {
-//            print("task complete", error)
-//        }
+2
     }
 }

@@ -18,7 +18,7 @@ class MyChannelAllocator: IChannelAllocator {
 }
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, ICometCallback, IConnectionCallback {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
@@ -45,59 +45,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ICometCallback, IConnecti
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-        let client = ICometClient()
-            client.prepare(conf: ICometConf(host: "192.168.0.52", port: 8888, url: "/ic/stream", iCometCallback: self, channelAllocator: MyChannelAllocator(), iConnCallback: self, enableSSL: false))
-            client.connect()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
-    func onFail(msg: String) {
-        NSLog("onFail: \(msg)")
-    }
     
-    func onSuccess() {
-        NSLog("onSuccess")
-    }
-    
-    func onDisconnect() {
-        NSLog("onDisconnect")
-    }
-    
-    func onStop() {
-        NSLog("onStop")
-    }
-    
-    func onReconnect(times: Int32) -> Bool {
-        NSLog("onReconnect: \(times)")
-        return false
-    }
-    
-    func onReconnectSuccess(times: Int32) {
-        NSLog("onReconnectSuccess: \(times)")
-    }
-    
-    func onDataMsgArrived(content: Message.Content) {
-        NSLog("onDataMsgArrived: \(content)")
-    }
-    
-    func onMsgArrived(msg: Message) {
-        NSLog("onMsgArrived: \(msg)")
-    }
-    
-    func onErrorMsgArrived(msg: Message) {
-        NSLog("onErrorMsgArrived: \(msg)")
-    }
-    
-    func onUnAuthorizedErrorMsgArrived() -> String? {
-        return "45c0437d67f30f875af640a378e92d43"
-    }
-    
-    func onMsgFormatError(msg: Message?) {
-        NSLog("onMsgFormatError: \(String(describing: msg))")
-    }
 
 }
 

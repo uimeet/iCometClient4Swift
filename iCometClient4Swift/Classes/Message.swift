@@ -76,7 +76,7 @@ public struct Message {
         let dataJson: [String: Any]?
         do {
             dataJson = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any]
-            return Message(type: MessageType(rawValue: dataJson!["type"]! as! String)!,
+            return Message(type: MessageType(rawValue: dataJson!["type"]! as! String) ?? MessageType.TYPE_UNKNOWN,
                             cname: dataJson!["cname"]! as! String,
                             seq: dataJson!["seq"]! as! Int64,
                             content: dataJson!["content"]! as! String)
