@@ -26,8 +26,6 @@ public class ICometClient: ICometConnectionDataDelegate {
     
     private var status: ClientState = ClientState.NEW
     
-    private var timer: Timer? = nil
-    
     public init() {}
     
     /**
@@ -68,7 +66,6 @@ public class ICometClient: ICometConnectionDataDelegate {
     public func stopConnect() {
         NSLog("[stopConnect]")
         self.status = ClientState.STOP_PENDING
-        self.clearTimer()
         if self.connection != nil {
             self.connection?.stopStreaming(true)
             self.connection = nil
@@ -85,11 +82,9 @@ public class ICometClient: ICometConnectionDataDelegate {
         if immediate {
             self.reconnectImmediate()
         } else {
-            self.clearTimer()
-            self.timer = Timer.init(timeInterval: 3, repeats: false) { (kTimer) in
-                self.reconnectImmediate();
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                self.reconnectImmediate()
             }
-            self.timer?.fire()
         }
     }
     
@@ -192,13 +187,6 @@ public class ICometClient: ICometConnectionDataDelegate {
         self.status = ClientState.DISCONNECT
         // 进行重连
         self.reconnect(immediate: true)
-    }
-    
-    func clearTimer() {
-        if self.timer != nil {
-            self.timer?.invalidate()
-            self.timer = nil
-        }
     }
     
 }
