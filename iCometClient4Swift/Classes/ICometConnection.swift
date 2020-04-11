@@ -84,7 +84,7 @@ public class ICometConnection: NSObject, URLSessionDataDelegate {
 
     public func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
         let rawData = String(data: data, encoding: .utf8)?.trimmingCharacters(in: .whitespacesAndNewlines)
-        NSLog("[DATA_ARRIVED] \(rawData)")
+        NSLog("[DATA_ARRIVED] \(String(describing: rawData))")
         
         for src in (rawData?.split{ $0.isNewline })! {
             NSLog("[DATA_ARRIVED.src]\(src)")
@@ -101,6 +101,6 @@ public class ICometConnection: NSObject, URLSessionDataDelegate {
         } else {
             self.dataDelegate.onError(error: error!)
         }
-2
+
     }
 }
