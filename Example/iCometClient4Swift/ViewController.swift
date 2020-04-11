@@ -19,12 +19,6 @@ class ViewController: UIViewController, ICometCallback, IConnectionCallback {
             client.prepare(conf: ICometConf(host: "192.168.0.52", port: 8888, url: "/ic/stream", iCometCallback: self, channelAllocator: MyChannelAllocator(), iConnCallback: self, enableSSL: false))
             client.connect()
         
-        let timer: Timer? = Timer.init(timeInterval: 5, repeats: false) { (timer) in
-            client.stopConnect()
-            timer.invalidate()
-            timer = nil
-        }
-        RunLoop.current.add(timer, forMode: .commonModes)
         //timer.fire()
             
         print("end")
