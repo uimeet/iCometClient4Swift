@@ -76,6 +76,11 @@ public class ICometConnection: NSObject, URLSessionDataDelegate {
 
         completionHandler(inStream)
     }
+    
+    public func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive response: URLResponse, completionHandler: @escaping (URLSession.ResponseDisposition) -> Void) {
+        completionHandler(URLSession.ResponseDisposition.allow)
+        NSLog("[DATA_ARRIVING]")
+    }
 
     public func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
         let rawData = String(data: data, encoding: .utf8)?.trimmingCharacters(in: .whitespacesAndNewlines)
