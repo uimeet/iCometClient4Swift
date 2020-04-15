@@ -92,7 +92,7 @@ public struct Message {
 }
 
 
-enum MessageType: String {
+public enum MessageType: String {
     // 数据消息
     case TYPE_DATA = "data"
     // 广播消息
