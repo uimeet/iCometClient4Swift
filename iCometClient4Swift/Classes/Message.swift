@@ -50,9 +50,9 @@ public struct Message {
         // 空内容
         static let Empty: Content = Content(type: 0, body: nil, id: "<Content.Empty>")
         
-        let type: Int32
-        let body: [String: Any]?
-        let id: String
+        public let type: Int32
+        public let body: [String: Any]?
+        public let id: String
         
         public var description: String {
             var values = ["type=\(self.type)", "id=\(self.id)"]
