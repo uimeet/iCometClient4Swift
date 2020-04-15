@@ -530,7 +530,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/iCometClient4Swift/iCometClient4Swift-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/iCometClient4Swift/iCometClient4Swift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MARKETING_VERSION = 0.1.2;
 				MODULEMAP_FILE = "Target Support Files/iCometClient4Swift/iCometClient4Swift.modulemap";
@@ -756,7 +756,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/iCometClient4Swift/iCometClient4Swift-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/iCometClient4Swift/iCometClient4Swift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MARKETING_VERSION = 0.1.2;
 				MODULEMAP_FILE = "Target Support Files/iCometClient4Swift/iCometClient4Swift.modulemap";
