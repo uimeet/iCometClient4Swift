@@ -11,21 +11,21 @@ import Foundation
 public struct Message {
     
     // 消息类型
-    let type: MessageType
+    public let type: MessageType
     
     // 频道名
-    let cname: String
+    public let cname: String
     
     // 消息位置
-    let seq: Int64
+    public let seq: Int64
     
     // 消息内容
-    let content: String
+    public let content: String
     
     // 未知类型消息
-    static let Unknown: Message = Message(type: MessageType.TYPE_UNKNOWN, cname: "", seq: 0, content: MessageType.TYPE_UNKNOWN.rawValue)
+    public static let Unknown: Message = Message(type: MessageType.TYPE_UNKNOWN, cname: "", seq: 0, content: MessageType.TYPE_UNKNOWN.rawValue)
     
-    var contentJSON: Content {
+    public var contentJSON: Content {
         NSLog("call contentJSON")
         if self.type == MessageType.TYPE_DATA || self.type == MessageType.TYPE_BROADCAST {
             do {
