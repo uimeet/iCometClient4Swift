@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'iCometClient4Swift'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'iCometClient for Swift'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/uimeet/iCometClient4Swift.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/uimeet'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '8.0'
 
   s.source_files = 'iCometClient4Swift/Classes/**/*'
   
