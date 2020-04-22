@@ -119,6 +119,9 @@ public class ICometClient: ICometConnectionDataDelegate {
             urlParts.append(":\(String(self.conf!.port))")
         }
         if self.conf!.url != "" {
+            if !self.conf!.url.hasPrefix("/") {
+                urlParts.append("/")
+            }
             urlParts.append(self.conf!.url)
         }
         if self.channel != nil {
@@ -175,6 +178,7 @@ public class ICometClient: ICometConnectionDataDelegate {
         if self.iconnectionCallback != nil {
             self.iconnectionCallback?.onFail(msg: error.localizedDescription)
         }
+        self.reconnect(immediate: false)
     }
     
     func onClose() {
@@ -186,7 +190,7 @@ public class ICometClient: ICometConnectionDataDelegate {
     func onCompleted() {
         self.status = ClientState.DISCONNECT
         // 进行重连
-        self.reconnect(immediate: true)
+        self.reconnect(immediate: false)
     }
     
 }
